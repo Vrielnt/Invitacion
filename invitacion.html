@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación a Evento de Inversión en Vocaloid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .pie_pag {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #373b3e; /* Color de fondo del pie de página */
+            color: #bec8d1; /* Color del texto del pie de página */
+            text-align: center;
+            padding: 10px 0; /* Espacio interno */
+            z-index: 999; /* Para que esté por encima de otros elementos */
+        }
+        .pie_pag a {
+            color: #86cecb; /* Color del texto del enlace */
+            text-decoration: none; /* Sin subrayado */
+            margin: 0 10px; /* Espacio entre enlaces */
+            transition: color 0.3s ease; /* Transición de color */
+        }
+        .pie_pag a:hover {
+            color: #137a7f; /* Cambio de color al pasar el ratón */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #86cecb;
+            background-image: url('https://static.wixstatic.com/media/dfe725_b034f6a229674b25b7ee79c5f4a33b9b~mv2.gif');
+            background-size: cover;
+            background-position: center;
+            animation: fadeIn 1s ease;
+            color: #373b3e;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Añadir transparencia */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            animation: fadeIn 1s ease;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Alineación horizontal */
+            flex-direction: row; /* Cambiar dirección del flexbox */
+        }
+        .content {
+            text-align: left; /* Alineación del texto a la izquierda */
+            margin-bottom: 30px;
+            flex: 1; /* Para que ocupe el espacio restante */
+        }
+        .logo, .event-image {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .event-image {
+            align-self: flex-end; /* Alinear la imagen a la derecha */
+        }
+        
+        h1 {
+            color: #e12885;
+            font-size: 32px; /* Tamaño del texto dinámico */
+            font-weight: bold; /* Sobresaliente */
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 18px; /* Tamaño del texto dinámico */
+        }
+        .event-details {
+            margin-bottom: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #137a7f;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #373b3e;
+        }
+                .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #137a7f;
+        }
+        .menu li {
+            float: left;
+        }
+        .menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .menu li a:hover {
+            background-color: #373b3e;
+        }
+    </style>
+     <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Crypton_Future_Media_logo.svg/2560px-Crypton_Future_Media_logo.svg.png" alt="Logo del evento" class="logo">
+            </div>
+            <h1>¡Únete a nuestro evento de Vocaloid!</h1>
+            <p>Estás invitado a nuestro evento donde discutiremos las últimas tendencias en inversiones relacionadas con Vocaloid </p>
+            <div class="event-details">
+                <p><strong>Fecha:</strong> 20 de abril de 2024</p>
+                <p><strong>Lugar:</strong> Centro de Convenciones XYZ</p>
+                <p><strong>Horario:</strong> 9:00 am - 5:00 pm</p>
+            </div>
+            <p>Confirma tu asistencia haciendo clic en el botón de abajo:</p>
+            <a href="confirmar.html" class="btn">Confirma Asistencia</a>
+                      <a href="mapa.html" class="btn">Mapa y ubicacion</a>
+           <a href="Detalles.html" class="btn">Detalles</a>
+<a href="registro.html" class="btn">Registro</a>
+        </div>
+        <div class="image-container">
+            <img src="https://m.media-amazon.com/images/I/61v-cNelfaL._AC_UF894,1000_QL80_.jpg" alt="Imagen derecha" class="event-image">
+        </div>
+    </div>
+    <div class="pie_pag">
+        <!-- Redes Sociales -->
+        <a href="https://www.facebook.com/HatsuneMikuOfficialPage/" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/mikuexpo" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/miku_expo/?ref=badge" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Importar Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>
+

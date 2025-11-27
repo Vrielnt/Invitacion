@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Asistencia</title>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .pie_pag {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #373b3e; /* Color de fondo del pie de página */
+            color: #bec8d1; /* Color del texto del pie de página */
+            text-align: center;
+            padding: 10px 0; /* Espacio interno */
+            z-index: 999; /* Para que esté por encima de otros elementos */
+        }
+        .pie_pag a {
+            color: #86cecb; /* Color del texto del enlace */
+            text-decoration: none; /* Sin subrayado */
+            margin: 0 10px; /* Espacio entre enlaces */
+            transition: color 0.3s ease; /* Transición de color */
+        }
+        .pie_pag a:hover {
+            color: #137a7f; /* Cambio de color al pasar el ratón */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #86cecb;
+            background-image: url('https://static.wixstatic.com/media/dfe725_b034f6a229674b25b7ee79c5f4a33b9b~mv2.gif');
+            background-size: cover;
+            background-position: center;
+            animation: fadeIn 1s ease;
+            color: #373b3e;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #373b3e; /* Color de fondo del contenedor */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #e12885; /* Color del título */
+        }
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #86cecb; /* Color del borde del campo de entrada */
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #bec8d1; /* Color de fondo del campo de entrada */
+            color: #373b3e; /* Color del texto del campo de entrada */
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #137a7f;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #e12885; /* Cambio de color al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Asistencia al Evento</h1>
+        <form action="#" method="post">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <input type="tel" name="telefono" placeholder="Teléfono">
+            <textarea name="mensaje" placeholder="Mensaje"></textarea>
+            <button type="submit" class="btn">Confirmar Asistencia</button>
+        </form>
+ <a href="invitacion.html" class="btn">Volver a la Página Principal</a>
+    </div>
+    <div class="pie_pag">
+        <!-- Redes Sociales -->
+        <a href="https://www.facebook.com/HatsuneMikuOfficialPage/" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/mikuexpo" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/miku_expo/?ref=badge" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Importar Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>

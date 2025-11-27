@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Asistencia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #86cecb;
+            background-image: url('https://static.wixstatic.com/media/dfe725_b034f6a229674b25b7ee79c5f4a33b9b~mv2.gif');
+            background-size: cover;
+            background-position: center;
+            animation: fadeIn 1s ease;
+            color: #373b3e;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #bec8d1;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #373b3e;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #373b3e;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #137a7f;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .containerboton {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #86cecb;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .btn2 {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e12885;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn2:hover {
+            background-color: #0056b3;
+        }
+        .pie_pag {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #373b3e; /* Color de fondo del pie de página */
+            color: #bec8d1; /* Color del texto del pie de página */
+            text-align: center;
+            padding: 10px 0; /* Espacio interno */
+            z-index: 999; /* Para que esté por encima de otros elementos */
+        }
+        .pie_pag a {
+            color: #86cecb; /* Color del texto del enlace */
+            text-decoration: none; /* Sin subrayado */
+            margin: 0 10px; /* Espacio entre enlaces */
+            transition: color 0.3s ease; /* Transición de color */
+        }
+        .pie_pag a:hover {
+            color: #137a7f; /* Cambio de color al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Gracias por confirmar tu asistencia! UWU</h1>
+        <p>Esperamos verte en el evento</p>
+        <p>Para más detalles, contáctanos en hatsunemiku@gmail.com</p>
+        <div id="codigoQR"></div>
+        <a href="invitacion.html" class="btn">Volver a la Página Principal</a>
+        <h1>Envío de Código QR por WhatsApp</h1>
+        <p>Presiona el botón para generar y enviar tu código personal QR por WhatsApp.</p>
+        <button onclick="enviarQRPorWhatsApp()" class="btn2">Generar y Enviar Código QR</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/qrcode.min.js"></script>
+    <script>
+        function enviarQRPorWhatsApp() {
+            // Generar un código QR único (por ejemplo, usando el timestamp actual)
+            var codigoQR = Date.now().toString();
+
+            // Crear un elemento <img> para el código QR
+            var imgQR = document.createElement('img');
+            imgQR.src = 'data:image/png;base64,' + btoa(codigoQR);
+
+            // Abrir una ventana de WhatsApp Web con el código QR adjunto
+            var whatsappURL = 'https://web.whatsapp.com/send?text=¡Aquí tienes tu código QR único!&attachment=data:image/png;base64,' + btoa(codigoQR);
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+    <div class="pie_pag">
+        <!-- Redes Sociales -->
+        <a href="https://www.facebook.com/HatsuneMikuOfficialPage/" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/mikuexpo" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/miku_expo/?ref=badge" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Importar Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>
